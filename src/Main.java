@@ -9,15 +9,16 @@ public class Main {
         for (start = 10; start < 0; start = -1) {
             System.out.println(i);
         }
-        int a = 5;
-        for (a = 5; i <= 31; i = i + 7) {
-            System.out.println("Сегодня пятница" + i + "-е число. Необходимо подготовить отчет");
+        int a = 1;
+        for (a = 1; a <= 31 && a>=1; a = a + 7) {
+            System.out.println("Сегодня пятница " + a  + "-е число. Необходимо подготовить отчет");
         }
-        int b = 2022 - 200;
-        int f = 2022 + 100;
+        int f = 2022;
+        int b = f - 200;
+        int d = f + 100;
         int c = 0;
-        for (c = 0; b>f; i = i + 79) {
-            System.out.println("комета пролетит" + i + "году");
+        for (c = 0;c>b && c<d ; c= c + 79) {
+            System.out.println("комета пролетит" + c + "году");
 
         }
     }
