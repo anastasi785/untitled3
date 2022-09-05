@@ -6,20 +6,21 @@ public class Main {
             i++;
         }
         int start = 10;
-        for (start = 10; start <= 10 && start>=0; start  --) {
+        for (start = 10; start <= 10 && start >= 0; start--) {
             System.out.println(start);
         }
         int a = 1;
-        for (a = 1; a <= 31 && a>=1; a = a + 7) {
-            System.out.println("Сегодня пятница " + a  + "-е число. Необходимо подготовить отчет");
+        for (a = 1; a <= 31 && a >= 1; a = a + 7) {
+            System.out.println("Сегодня пятница " + a + "-е число. Необходимо подготовить отчет");
         }
-        int f = 2022;
-        int b = f - 200;
-        int d = f + 100;
-        int c = 0;
-        for (c = 0;c<=d && c>=b ; c= c + 79) {
-            System.out.println("комета пролетит" + c + "году");
+        int currentYear = 2022;
+        int oldYear = currentYear - 200;
+        int nextYear = currentYear + 100;
+        for (int c = 79; c <= nextYear; c = c+79) {
+            if (c >= oldYear) {
+                System.out.println(c);
 
+            }
         }
     }
 }
